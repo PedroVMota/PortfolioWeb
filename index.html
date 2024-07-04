@@ -1,0 +1,226 @@
+<!doctype html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap');
+
+    body {
+      font-family: 'Roboto', sans-serif;
+    }
+  </style>
+  <link rel="stylesheet" href="./style.css">
+</head>
+
+<body class="bg-gray-900">
+  <header class="text-white p-4">
+    <nav class="container mx-auto flex justify-between items-center w-5/6">
+      <div>
+        <a href="#" class="text-2xl font-bold">Portfolio</a>
+      </div>
+      <div>
+        <ul class="flex space-x-4">
+          <li><a href="#about" class="hover:text-gray-400 text-slate-400">About</a></li>
+          <li><a href="#Timeline" class="hover:text-gray-400 text-slate-400">Projects</a></li>
+        </ul>
+    </nav>
+  </header>
+
+  <div class="fixed bottom-0 right-0 p-4" id="scrollToTop">
+    <button style="
+      padding: 1rem 2rem;
+      background-color: transparent;
+      color: #f1f1f1;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+    ">
+      <img src="./Assets/SVG/UP.svg" alt="Up Arrow" style="width: 30px; height: 30px;">
+    </button>
+
+
+  </div>
+
+  <section id="About" class="container-md mx-auto flex justify-between items-center w-4/5 text-white relative">
+    <div class="w-full flex flex-col md:flex-row items-center min-h-screen justify-center">
+      <div class="w-auto bg-gray-900 p-8 sm-md:ml-10 z-10  xl:ml-20 rounded-lg">
+        <h1 class="text-4xl font-bold py-4 text-cyan-200">About Me</h1>
+        <p class="text-lg mb-4 ">
+          I have been motivated by an endless passion and a flexible mindset in creating innovative software solutions throughout my journey as a Software Developer.
+          <br />
+          <br />
+          I have experience in web and desktop development, and I am now venturing into mobile development. Through personal projects, I have refined my skills and gained valuable knowledge that I am excited to contribute to the field. With a dedication to quality and a willingness to take on new obstacles
+          <br />
+          <br />
+          I am prepared to make a meaningful difference in the technology industry.
+        </p>
+
+        <!-- Break Line With tailwind css -->
+        <div class="border-b border-gray-700"></div>
+        <div class="flex items-center justify-between py-4">
+          <div class="">
+            <h1 class="text-4xl font-bold py-4 text-cyan-200">Contact:</h1>
+            <span class="text-lg font-semibold text-gray-400 dark:text-gray-200">E-mail:</span>
+            <a href="mailto:pedromotaseguranca@gmail.com" class="text-lg underline font-thin text-gray-400 dark:text-gray-300">
+              pedromotaseguranca@gmail.com
+            </a>
+      
+          </div>  
+        </div>  
+        <button href="#Timeline" class="bg-cyan-700 font-semibold px-3 py-2 rounded-sm text-sm" style="cursor: pointer;" onclick="document.querySelector('#Timeline').scrollIntoView({ behavior: 'smooth' })">Projects</button>
+        
+      </div>
+      <div class="hidden w-full sm-md:flex items-center justify-center z-0">
+        <img src="https://cdn.intra.42.fr/users/79f1824e54931795d46968037b8de6c9/pvital-m.jpg" alt="Profile Picture"
+          class="rounded-lg md:mr-16 lg:mr-20 xl:mr-20" style="width: 300px; height: 590px; object-fit: cover;">
+      </div>
+  </section>
+
+
+  <section id="Timeline" class="container-lg mx-auto flex justify-between w-1/2 text-white relative flex-col">
+    <div class="flex flex-col py-10">
+      <div class="flex flex-col py-10 ">
+        <div class=" bg-gray-900 py-8  z-10 rounded-lg">
+          <h1 class="text-4xl font-bold py-4">Projects</h1>
+          <p class="text-lg mb-2">Here is some of my best projects that I have worked on. </p>
+          <p class="text-lg mb-10">
+            Mayority of them are from 42 School, where I have learned a lot of things and have improved my skills.</p>
+        </div>
+      </div>
+      <ol class="relative border-s border-gray-200 dark:border-gray-700">
+        <li class="mb-10 ms-4">
+          <div
+            class="absolute w-3 h-3 bg-gray-200 rounded-full mt-1.5 -start-1.5 border border-white dark:border-gray-900 dark:bg-gray-700">
+          </div>
+          <time class="mb-1 text-sm font-normal leading-none text-gray-400 dark:text-gray-500"> Not Finished</time>
+          <div class="flex items-center justify-between">
+            <h3 class="text-lg font-semibold text-gray-900 dark:text-white">ft_transcendense</h3>
+            <!-- Project State github styled -->
+            <p class="Doing text-sm px-4 ml-3">Doing it</p>
+          </div>
+          <p class="mb-4 text-base font-normal text-gray-500 dark:text-gray-400">
+
+            The goal of this project is to create a website that allows you to play games with your friends. The
+            website
+            must be able to handle multiple games at the same time, and the games must be able to handle multiple
+            players
+            at the same time. The website must also be able to handle multiple rooms, and the players must be able to
+            create their own rooms, invite their friends to their rooms, and join their friends' rooms, Chat,
+            Authentication etc...
+
+          </p>
+        </li>
+        <li class="mb-10 ms-4">
+          <div
+            class="absolute w-3 h-3 bg-gray-200 rounded-full mt-1.5 -start-1.5 border border-white dark:border-gray-900 dark:bg-gray-700">
+          </div>
+          <time class="mb-1 text-sm font-normal leading-none text-gray-400 dark:text-gray-500">2024-05-20</time>
+          <div class="flex items-center justify-between">
+            <h3 class="text-lg font-semibold text-gray-900 dark:text-white">ft_irc</h3>
+            <!-- Project State github styled -->
+            <p class="Sucesss text-sm px-4 ml-3">Done</p>
+          </div>
+          <p class="mb-4 text-base font-normal text-gray-500 dark:text-gray-400">
+            The goal of this project is to create a fully functional IRC Server, using HexChat as a client and ft_irc
+            as
+            the server. The server must be able to handle multiple clients at the same time, and the clients must be
+            able
+            to communicate with each other.
+          </p>
+        </li>
+        <li class="mb-10 ms-4">
+          <div
+            class="absolute w-3 h-3 bg-gray-200 rounded-full mt-1.5 -start-1.5 border border-white dark:border-gray-900 dark:bg-gray-700">
+          </div>
+          <time class="mb-1 text-sm font-normal leading-none text-gray-400 dark:text-gray-500">2024-02</time>
+          <div class="flex items-center justify-between">
+            <h3 class="text-lg font-semibold text-gray-900 dark:text-white">Mini Raytracing</h3>
+            <!-- Project State github styled -->
+            <p class="Sucesss text-sm px-4 ml-3">Done</p>
+          </div>
+          <p class="mb-4 text-base font-normal text-gray-500 dark:text-gray-400">
+            The goal of this project is to create a simple raytracing engine. The engine must be able to render simple
+            objects, such as spheres and planes, cylinders. Using the raytracing technique, the engine must be able to
+            render shadows, reflections, roughness, specular and diffuse lighting.
+          </p>
+        </li>
+        <li class="mb-10 ms-4">
+          <div
+            class="absolute w-3 h-3 bg-gray-200 rounded-full mt-1.5 -start-1.5 border border-white dark:border-gray-900 dark:bg-gray-700">
+          </div>
+          <time class="mb-1 text-sm font-normal leading-none text-gray-400 dark:text-gray-500">2023-12</time>
+          <div class="flex items-center justify-between">
+            <h3 class="text-lg font-semibold text-gray-900 dark:text-white">Minishell</h3>
+            <!-- Project State github styled -->
+            <p class="Sucesss text-sm px-4 ml-3">Done</p>
+          </div>
+          <p class="mb-4 text-base font-normal text-gray-500 dark:text-gray-400">
+            The goal of this project is to create a simple shell. The shell must be able to execute simple commands,
+            such
+            as ls, echo, cat, etc. The shell must also be able to handle redirections, pipes, and signals.
+          </p>
+        </li>
+      </ol>
+    </div>
+  </section>
+
+
+</body>
+
+<script>
+  document.addEventListener('DOMContentLoaded', (event) => {
+    const timelineSection = document.querySelector('#Timeline');
+
+    const options = {
+      root: null, // Use the viewport as the root
+      threshold: 0.3, // Trigger when 10% of the target is visible
+    };
+
+    const observer = new IntersectionObserver((entries, observer) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          // Element is in the viewport, add class 'visible'
+          entry.target.classList.add('visible');
+        } else {
+          // Element is not in the viewport, remove class 'visible'
+          entry.target.classList.remove('visible');
+        }
+      });
+    }, options);
+
+    observer.observe(timelineSection);
+    window.addEventListener('scroll', () => {
+      const scrollToTopButton = document.querySelector('#scrollToTop');
+      console.log(window.scrollY);
+      if (window.scrollY > 500) {
+        if (scrollToTopButton.classList.contains('hidden')) {
+          scrollToTopButton.classList.remove('hidden');
+          scrollToTopButton.classList.add('fixed');
+
+          setTimeout(() => {
+            scrollToTopButton.classList.add('show-slide');
+          }, 300);
+          return;
+        }
+      } else {
+        if (scrollToTopButton.classList.contains('fixed')) {
+          scrollToTopButton.classList.add('hide-slide');
+
+          setTimeout(() => {
+            scrollToTopButton.classList.remove('fixed');
+            scrollToTopButton.classList.remove('hide-slide');
+            scrollToTopButton.classList.add('hidden');
+          }, 300);
+        }
+      }
+    });
+    window.dispatchEvent(new Event('scroll'));
+  });
+
+</script>
+
+</html>

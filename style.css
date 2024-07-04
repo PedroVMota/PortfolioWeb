@@ -1,0 +1,151 @@
+/* md:ml-16 */
+
+@media screen and (min-width: 768px) {
+    .md\:mr-16 {
+        margin-right: 16em !important
+    }
+
+    .md\:ml-10 {
+        margin-left: 10em !important
+    }
+
+    .md\:flex {
+        display: flex !important;
+    }
+}
+
+/* lg:mr-20 */
+
+@media screen and (min-width: 1024px) {
+    .lg\:mr-20 {
+        margin-right: 20em !important
+    }
+}
+
+/* xl:mr-24 */
+
+@media screen and (min-width: 1280px) {
+    .xl\:mr-40 {
+        margin-right: 40em !important
+    }
+
+    .xl\:mr-20 {
+        margin-right: 20em !important
+    }
+
+    .xl\:ml-20 {
+        margin-left: 20em !important
+    }
+}
+
+/* sm-md:flex */
+@media screen and (min-width: 900px) {
+    .sm-md\:flex {
+        display: flex !important;
+    }
+
+    .sm-md\:mr-40 {
+        margin-right: 40em !important
+    }
+
+    .sm-md\:mr-20 {
+        margin-right: 20em !important
+    }
+
+    .sm-md\:ml-20 {
+        margin-left: 20em !important
+    }
+
+    .sm-md\:mr-16 {
+        margin-right: 16em !important
+    }
+
+    .sm-md\:ml-10 {
+        margin-left: 10em !important
+    }
+
+    .sm-md\:flex {
+        display: flex !important;
+    }
+
+    .sm-md\:mr-20 {
+        margin-right: 20em !important
+    }
+}
+
+* {
+    transition: all 0.5s ease-in-out;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+.Sucesss {
+    width: auto;
+    background-color: #00ff6a25;
+    border: 2px solid #178d48;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 0.2em;
+}
+
+.Doing {
+    width: auto;
+    background-color: #b937e84f;
+    border: 2px solid rgba(131, 84, 148, 0.471);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 0.2em;
+}
+
+#Timeline {
+    transition: opacity 0.5s ease, transform 0.5s ease;
+    opacity: 0;
+    transform: translateX(-50px);
+}
+
+#Timeline.visible {
+    opacity: 1;
+    transform: translateX(0);
+}
+
+.show-slide {
+
+    animation: inSlide 0.5s ease;
+    animation-iteration-count: 1;
+}
+
+.hide-slide {
+    animation: outSlide 0.5s ease;
+    animation-iteration-count: 1;
+}
+
+@keyframes outSlide {
+    0% {
+        transform: translateY(0);
+        opacity: 1;
+    }
+
+    100% {
+        transform: translateY(-50px);
+        opacity: 0;
+    }
+}
+
+@keyframes inSlide {
+    0% {
+        transform: translateY(-50px);
+        opacity: 0;
+    }
+
+    100% {
+        transform: translateY(0);
+        opacity: 1;
+        
+    }
+}
+
+/* fixed bottom-0 right-0 p-4 */
